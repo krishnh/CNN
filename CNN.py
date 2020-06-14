@@ -34,5 +34,6 @@ print("Accuracy:  %.2f%%" % (scores[1]*100))
 
 model.save("/root/MLOPS/mnist_model.h5")
 
-file1 = open("result.txt","w")
+file1 = open("/root/MLOPS/result.txt","w")
 file1.write(str(scores[1]*100))
+file1.close()
